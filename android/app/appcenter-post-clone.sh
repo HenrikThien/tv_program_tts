@@ -18,7 +18,8 @@ flutter doctor
 
 flutter pub get
 
-flutter build appbundle --target-platform android-arm,android-arm64,android-x64
+flutter build apk --release
+flutter build appbundle
 
 # copy the APK where AppCenter will find it
 mkdir -p android/app/build/outputs/apk/; mv build/app/outputs/apk/release/app-release.apk $_
